@@ -13,4 +13,5 @@ messages = [
     ("user", "Write a short poem about the moon.")
 ]
 
-print(llm.invoke(messages))
+for chunk in llm.stream(messages):
+    print(chunk.text(), end="|")
