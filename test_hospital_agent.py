@@ -28,9 +28,9 @@ def run_comprehensive_test():
     # Test cases covering all features
     test_cases = [
         # "Hello! What services do you provide?",
-        "Can you list all available doctors?",
+        # "Can you list all available doctors?",
         # "Show me cardiologists only",
-        # "What are the hospital departments?",
+        "What are the hospital departments?",
         # "Check availability of Dr. Sarah Johnson",
         # "I want to book an appointment with Dr. Michael Chen for John Smith on 2024-02-15 at 10:00 AM for headache consultation",
         # "What services does the hospital offer?",

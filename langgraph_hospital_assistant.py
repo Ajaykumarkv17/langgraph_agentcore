@@ -5,14 +5,12 @@ from langgraph.graph import StateGraph, START
 from langgraph.graph.message import add_messages
 from langgraph.prebuilt import ToolNode, tools_condition
 from langchain_core.tools import tool
-import os
+
 import json
 from datetime import datetime, timedelta
 import random
 
-from dotenv import load_dotenv
 
-load_dotenv()
 
 
 HOSPITAL_DATA = {
@@ -36,11 +34,10 @@ HOSPITAL_DATA = {
     }
 }
 
-bedrock_api_key = os.getenv("AWS_BEARER_TOKEN_BEDROCK")
+
 llm = init_chat_model(
     "us.amazon.nova-lite-v1:0",
-    model_provider="bedrock",
-    api_key=bedrock_api_key
+    model_provider="bedrock_converse"
 )
 
 # Hospital Tools
