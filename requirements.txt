@@ -9,3 +9,4 @@ opentelemetry-instrumentation-langchain
 bedrock-agentcore
 bedrock-agentcore-starter-toolkit
 duckduckgo-search
+ddgs

@@ -1,3 +1,4 @@
 .env
 myawsvenv
 .bedrock_agentcore.yaml
+__pycache__
